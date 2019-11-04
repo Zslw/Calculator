@@ -98,7 +98,8 @@ function operate(){
             break;
         case '÷':
                 if (number2 == 0) {
-                    sd.innerText = "Error Can't Divide by 0";
+                    sd.innerText = "";
+                    alert("Can't divide by 0")
                 } 
             output = divide(number1,number2);
             break;
@@ -106,8 +107,11 @@ function operate(){
             alert('Enter a basic opperator');
     }
 
+    if(isNaN(output) === true){ 
+        processEvent('c');
+    } else{
     mainDisplay = ""+ output; //Make sure that this casts to string
     md.innerText = mainDisplay;
     sd.innerText = sd.innerText + " = " + output;
-
+    }
 }
