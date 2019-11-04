@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link href="Images/Calculator_icon.png" type="image/png" rel="icon">
         <link href="styles/styles.css" rel="stylesheet">
         <meta charset="utf-8">
             <title>Calculator</title>
@@ -16,30 +17,34 @@
                 </div>
               
                 <div class="buttons">
-                    <div class="operator" ><button id="clear">c</button></div>
-                    <div class="operator" ><button id="delete">BS</button></div>
-                    <div class="operator" ><button id="divide">÷</button></div>
-                    <div class="operator" ><button id="multiply">×</button></div>
+                    <div><button id="clear" class="cleaner" >c</button></div>
+                    <div><button id="delete"  class="cleaner" >BS</button></div>
+                    <div><button id="divide"  class="operator" >÷</button></div>
+                    <div><button id="multiply"  class="operator" >×</button></div>
               
                     <div class="number" ><button id="btn7">7</button></div>
                     <div class="number" ><button id="btn8">8</button></div>
                     <div class="number" ><button id="btn9">9</button></div>
-                    <div class="operator" ><button id="subtract">-</button></div>
+                    <div><button id="subtract"  class="operator" >-</button></div>
               
                     <div class="number" ><button id="btn4">4</button></div>
                     <div class="number" ><button id="btn5">5</button></div>
                     <div class="number" ><button id="btn6">6</button></div>
-                    <div class="operator"><button id="add">+</button></div>
+                    <div ><button id="add" class="operator">+</button></div>
               
                     <div class="number" ><button id="btn1">1</button></div>
                     <div class="number" ><button id="btn2">2</button></div>
                     <div class="number" ><button id="btn3">3</button></div>
-                    <div class="operator" ><button id="equal">=</button></div>
+                    <div><button id="equal"  class="operator" >=</button></div>
               
                     <div class="number" ><button id="btn0">0</button></div>
                     <div class="number" ><button id="decimal">.</button></div>
                 </div>           
-        </div>              
+        </div>
+        
+        <div id="footer">
+                <p>Simple Calculator by Daniel J.</p>
+        </div>
 
         <script src="scripts/main.js"></script>
     </body>

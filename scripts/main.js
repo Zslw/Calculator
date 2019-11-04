@@ -18,7 +18,7 @@ function processEvent(value) {//This is the main functiion.
     console.log(lastMd)
 
 
-    // Loop to run through the various inputs that couuld be made.  Could be re-factored at a later date.
+    // Loop to run through the various buttons that couuld be made.  Could be re-factored at a later date.
     if (value === "c" ) {
         mainDisplay="0";
         md.classList.add("newNumber");
